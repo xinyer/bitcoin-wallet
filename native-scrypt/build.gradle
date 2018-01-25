@@ -2,7 +2,7 @@ apply plugin: 'com.android.model.native'
 
 model {
     android {
-        compileSdkVersion 15
+        compileSdkVersion 26
 
         ndk {
             moduleName 'scrypt'
