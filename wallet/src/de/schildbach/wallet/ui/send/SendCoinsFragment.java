@@ -1172,8 +1172,7 @@ public final class SendCoinsFragment extends Fragment {
                 payeeVerifiedByView.setVisibility(View.VISIBLE);
                 final String verifiedBy = paymentIntent.payeeVerifiedBy != null ? paymentIntent.payeeVerifiedBy
                         : getString(R.string.send_coins_fragment_payee_verified_by_unknown);
-                payeeVerifiedByView.setText(Constants.CHAR_CHECKMARK
-                        + String.format(getString(R.string.send_coins_fragment_payee_verified_by), verifiedBy));
+                payeeVerifiedByView.setText(Constants.CHAR_CHECKMARK + String.format(getString(R.string.send_coins_fragment_payee_verified_by), verifiedBy));
             } else {
                 payeeNameView.setVisibility(View.GONE);
                 payeeVerifiedByView.setVisibility(View.GONE);

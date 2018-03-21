@@ -655,8 +655,7 @@ public class BlockchainServiceImpl extends android.app.Service implements Blockc
                 resetBlockchainOnShutdown = true;
                 stopSelf();
             } else if (BlockchainService.ACTION_BROADCAST_TRANSACTION.equals(action)) {
-                final Sha256Hash hash = Sha256Hash
-                        .wrap(intent.getByteArrayExtra(BlockchainService.ACTION_BROADCAST_TRANSACTION_HASH));
+                final Sha256Hash hash = Sha256Hash.wrap(intent.getByteArrayExtra(BlockchainService.ACTION_BROADCAST_TRANSACTION_HASH));
                 final Transaction tx = application.getWallet().getTransaction(hash);
 
                 if (peerGroup != null) {
